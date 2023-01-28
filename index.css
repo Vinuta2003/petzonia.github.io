@@ -19,7 +19,8 @@ body {
 .donate,
 .food,
 .toys,
-.vets {
+.vets
+.login {
   position: absolute;
   top: 2px;
   left: 0;
@@ -47,6 +48,7 @@ body {
   left: 682.55px;
   width: 474.45px;
   height: 34px;
+  z-index: 1;
 }
 .cart-in-child {
   top: 0;
@@ -76,6 +78,7 @@ body {
   left: 0;
   width: 161px;
   height: 67px;
+  z-index: 1;
 }
 .cart-logo-icon {
   top: 12px;
