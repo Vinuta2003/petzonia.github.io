@@ -8,5 +8,5 @@ if(screen.width>=2000)
 }
 if(screen.width>=2500)
 {
-    document.write("<style>body{zoom:150%}</style>");
+    document.write("<style>body{zoom:50%}</style>");
 }
