@@ -8,7 +8,7 @@ function validate()
     }
     else{
         
-        window.location.assign("tablecolo.html",'_blank');alert("email valid");
+        window.location.assign("index.html",'_blank');alert("Logged in Successfully!");
         
     }
 }
