@@ -11,6 +11,5 @@ function validate()
         window.location.assign("tablecolo.html",'_blank');alert("email valid");
         
     }
-    
-
 }
+
