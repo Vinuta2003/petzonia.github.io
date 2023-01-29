@@ -77,9 +77,31 @@ body {
   width: 634.28px;
   height: 35px;
 }
-.options:focus
-{
-  color: aqua;
+.options{
+  position: relative;
+}
+.options a{
+  position: relative;
+  color:#fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left:30px;
+  transition:0.3s ease;
+}
+.options a:before{
+  content:'';
+  position: absolute;
+  background: #fff;
+  width:0;
+  height:3px;
+  bottom:0;
+  left:0;
+  transition: 0.3s ease;
+}
+.options a:hover:before{
+  width:100%;
+
 }
 .cart-child,
 .cart-favicon {
