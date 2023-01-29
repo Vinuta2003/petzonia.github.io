@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>PetZonia - Home</title>
     <link rel="icon" type="image/x-icon" href="petzonia_final.png">
     <script src="home.js"></script>
@@ -14,12 +14,16 @@
     <div class="main">
       <div class="main-child"></div>
       <div class="main-item"></div>
-      <ul class="options">
+      <ul class="options" >
         <li class="vets">
             <a href="vets.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Vets</a>
         </li>
-        <li class="food">
-            <a href="food.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Food</a>
+        <li class="food" >
+            <a href="food.html" onclick="audio.play()" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Food</a>
+            <script type="text/javascript">
+              const audio=new Audio();
+              audio.src="bark.wav";
+            </script>
         </li>
         <li class="toys">
             <a href="toys.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Toys</a>
@@ -27,13 +31,10 @@
         <li class="donate">
             <a href="donate.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Donate</a>
         </li>
-        <!-- <li class="login">
-            <a href="login.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Login</a>
-        </li> -->
-        <li class="login">
-          <a style="font-family: 'Trebuchet MS';">Logged in</a>
         
-          
+            
+        <li class="login">
+          <a href=""  id="a" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;" >Logged_in</a>
       </li>
       </ul>
         

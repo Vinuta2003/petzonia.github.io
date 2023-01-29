@@ -57,7 +57,7 @@ body {
 }
 .donate {
   top: 0;
-  left: 345.17px;
+  left: 340px;
 }
 .donate,
 .login,
@@ -65,11 +65,11 @@ body {
   position: absolute;
 }
 .login {
-  top: 1px;
+  top:0px;
   left: 505px;
   display: inline-block;
   width: 129.28px;
-  height: 32px;
+  height: 25px;
 }
 .options {
   top: 32px;
