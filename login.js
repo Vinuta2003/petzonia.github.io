@@ -8,7 +8,8 @@ function validate()
     }
     else{
         
-        window.location.assign("index.html",'_blank');alert("Logged in Successfully!");
+       
+        window.location.assign("index1.html",'_blank');alert("Logged in Successfully!");
         
     }
 }
