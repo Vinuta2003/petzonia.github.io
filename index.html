@@ -31,10 +31,13 @@
             <a href="login.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Login</a>
         </li> -->
         <li class="login">
-          <button type="button" onclick="myf()">Login</button>
+          <a href="login.html" target="_blank" id="a" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;" onclick="myf()">Login</a>
+        
           <script type="text/javascript">
             function myf()
-            {document.nodeValue="Logged in";}
+            {document.getElementById("a").innerHTML="Logged in";
+          
+          }
         </script>
       </li>
       </ul>
