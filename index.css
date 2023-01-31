@@ -2,7 +2,10 @@
 body {
   margin: 0;
   line-height: normal;
+  display: flex;
 }
+
+
 .main-child {
   position: absolute;
   top: 0;
@@ -16,6 +19,19 @@ body {
     #ffc632;
   width: 1920px;
   height: 2384px;
+  color: black;
+  text-emphasis-color: royalblue;
+  font-size: 50px;
+  font-family: 'Itim', cursive;
+}
+
+div h3{
+  padding-left: 200px;
+  font-family: ;
+}
+
+div p{
+  margin-top: 200px;
 }
 
 .main-item {
@@ -161,17 +177,24 @@ body {
   width: 122px;
   height: 122px;
 }
-.eat-play {
-  position: absolute;
-  top: 65px;
-  left: 194px;
-  font-size: 35px;
-  font-weight: 600;
-  color: #000;
-  display: inline-block;
-  width: 381px;
-  height: 45px;
+
+h3 span {
+  transition: 0.5s ease-out;
 }
+h3:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+h3:hover span:nth-child(1):after {
+  content: " - ";
+}
+h3:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+h3:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
 .footer {
   position: absolute;
   top: 0;
