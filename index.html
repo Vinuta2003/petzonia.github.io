@@ -7,12 +7,27 @@
     <link rel="stylesheet" href="./index.css" />
     <title>PetZonia - Home</title>
     <link rel="icon" type="image/x-icon" href="petzonia_final.png">
+
     <script src="home.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   </head>
   <body >
+
     <div class="main">
-      <div class="main-child"></div>
+
+      <div class="main-child">
+        <h3>
+            <span>eat </span> - <span> play </span> -  <span>  repeat</span>
+        </h3>
+        <p>
+           Petzonia is a digital platform that provides <br> information, resources, and services related to <br> pets, such as dogs, cats, birds, and other <br> domestic animals.
+          <br> <br>
+          A comprehensive resource for pet owners and <br> lovers, providing information, support, and <br> community for those who are passionate about <br> their furry friends.
+        </p>
+      </div>
       <div class="main-item"></div>
       <ul class="options">
         <li class="vets">
@@ -34,13 +49,13 @@
         
             
         <li class="login">
-          <a href="login.html" target="_blank" id="a" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;left: 460px;" onclick="myf()">Login</a>
+          <a href="login.html" id="a" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;left: 460px;" onclick="myf()">Login</a>
         
           <script type="text/javascript">
             function myf()
-            {document.getElementById("a").innerHTML="Logged in";
-          
-          }
+            {
+              document.getElementById("a").innerHTML="Logged in";
+            }
         </script>
       </li>
       </ul>
@@ -56,9 +71,11 @@
 
       <img class="dog-and-cat" alt="" src="public/dog-and-cat@2x.png" />
       <img class="rabbit-and-dove" alt="" src="public/rabbit-and-dove@2x.png"/>
-      <img class="petzonia-logo-icon" alt="" src="public/petzonia-logo@2x.png"/>
+      <a href="index.html">
+        <img class="petzonia-logo-icon" alt="" src="public/petzonia-logo@2x.png"> 
+      </a>
 
-      <div class="eat-play">eat - play - repeat</div>
+    
       <div class="down">
         <div class="footer"></div>
         <div class="copywrite">
@@ -83,4 +100,4 @@
       </div>
     </div>
   </body>
-</html>
+</html> 
