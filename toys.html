@@ -6,17 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toys</title>
     <link rel="stylesheet" href="toys.css">
+    <script type="text/javascript" src="toys.js"></script>
 </head>
-<body>
+<body> 
+    <div class="cart" id="cart">
+<div class="title">
+    CART
+</div><hr>
+<div id="title"></div>
+    </div>
     <div class="container">
-        <div class="car" id="item1">
-            <img src="">
-            <div class="title"><Rope/div>
+        <div class="card" id="item1">
+            <img src="ball.jpg">
+            <div class="title">Rope</div>
                 <div>
                     <h3>MRP:250</h3>
                 </div>
         </div>
-        <button>Add to cart</button>
+        <button style="z-index: 1;"onclick="myf(item1)">Add to cart</button>
     </div>
+    <div class="card" id="item2">
+            <img src="swing.jpg">
+            <div class="title">Swing</div>
+                <div>
+                    <h3>MRP:250</h3>
+                </div>
+        </div>
+        <button onclick="myf(item2)">Add to cart</button>
+    </div>
+   
 </body>
 </html>
