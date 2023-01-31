@@ -27,7 +27,6 @@ body {
 
 div h3{
   padding-left: 200px;
-  font-family: ;
 }
 
 div p{
@@ -65,6 +64,9 @@ div p{
   height: 32px;
 
 }
+
+
+
 .toys {
   position: absolute;
   top: 1px;
@@ -157,8 +159,8 @@ div p{
 }
 
 .dog-and-cat,
-.petzonia-logo-icon,
-.rabbit-and-dove {
+.petzonia-logo-icon
+ {
   position: absolute;
   top: 178px;
   left: 912px;
@@ -166,8 +168,8 @@ div p{
   height: 933px;
   object-fit: cover;
 }
-.petzonia-logo-icon,
-.rabbit-and-dove {
+.petzonia-logo-icon
+ {
   top: 1138px;
   left: 34px;
 }
