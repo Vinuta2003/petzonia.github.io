@@ -58,6 +58,36 @@ const handleDecremen = () => {
 incremen.addEventListener("click", handleIncremen);
 decremen.addEventListener("click", handleDecremen);
 
+function totall() {
+  var total = 0;
+  itemID = document.getElementById("countt");
+  total = total + parseInt(itemID.value) * parseInt(itemID.getElementById("individual").value);
+  document.getElementById("amount").innerHTML =total;
+   
+}
+
+
+// function calculate2(elm) {
+//   var chk = $(elm),                // the checkbox
+//       vlu = chk.val(),             // the current qty value
+//       pid = chk.data("productid"), // product id
+//       unt = chk.data("unitprice"), // unit price
+//       res = $("amount" + pid),   // the result for this product
+//       tot = vlu * unt;             // total
+  
+//   res.text("$" + tot);
+// }
+
+
+// function calculate(elm) {
+//   var vlu = elm.value,           // the current qty value
+//       pid = elm.getAttribute("data-productid"), // product id
+//       unt = elm.getAttribute("data-unitprice"), // unit price
+//       res = document.getElementsByClassName("amout" + pid),   // the result for this product
+//       tot = vlu * unt;             // total
+  
+//   res[0].innerHTML = "$" + tot;
+// }
 
 
 
