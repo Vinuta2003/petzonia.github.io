@@ -297,6 +297,20 @@ body {
     width: 1920px;
     height: 259px;
   }
+
+  .small-container
+  {
+    margin: 80px auto;
+
+  }
+  .table
+  {
+    
+    width: 100%;
+   
+    border-collapse: collapse;
+  }
+
   .main {
     position: relative;
     background-color: #fff;
