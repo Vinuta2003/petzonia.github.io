@@ -1,9 +1,12 @@
 function validate()
 {
-    var strValidate=form.username.value.search(/[@".com"]/);
+    var strValidate=form.username.value.search(/[a-z@".com"]/);
     if(strValidate==-1)
     {
+        document.getElementById("user").focus();
+        document.getElementById("user").select();
         alert("Email invalid");
+        
         
     }
     else{

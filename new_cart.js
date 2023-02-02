@@ -19,7 +19,8 @@ const handleIncrement = () => {
 
 // Function to decrement count
 const handleDecrement = () => {
-  count--;
+  if(count!=0)
+  {count--;}
   totalCount.innerHTML = count;
 };
 
@@ -50,7 +51,8 @@ const handleIncremen = () => {
 
 // Function to decrement count
 const handleDecremen = () => {
-  countt--;
+  if(count!=0)
+  {countt--;}
   total.innerHTML = countt;
 };
 
@@ -59,9 +61,10 @@ incremen.addEventListener("click", handleIncremen);
 decremen.addEventListener("click", handleDecremen);
 
 function totall() {
-  var total = 0;
+  parseInt(total) = 0;
   itemID = document.getElementById("countt");
-  total = total + parseInt(itemID.value) * parseInt(itemID.getElementById("individual").value);
+  var a=document.getElementById("individual");
+  total = parseInt(itemID.value) * parseInt(a.value);
   document.getElementById("amount").innerHTML =total;
    
 }

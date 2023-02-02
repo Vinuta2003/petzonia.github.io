@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="./index.css" />
     <title>PetZonia - Home</title>
     <link rel="icon" type="image/x-icon" href="petzonia_final.png">
+
     <script src="home.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   </head>
   <body >
+
     <div class="main">
-      <div class="main-child"></div>
+
+      <div class="main-child">
+        <h3>
+            <span>eat </span> - <span> play </span> -  <span>  repeat</span>
+        </h3>
+        <p>
+           Petzonia is a digital platform that provides <br> information, resources, and services related <br> to pets, such as dogs, cats, birds, and other <br> domestic animals.
+          <br> <br>
+          A comprehensive resource for pet owners <br>and lovers, providing information,<br> support, and community for those <br> who are passionate about their<br> furry friends.
+        </p>
+      </div>
       <div class="main-item"></div>
-      <ul class="options" >
+      <ul class="options" id="options">
         <li class="vets">
-            <a href="vets.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Vets</a>
+            <a  href="index.html" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;"><u>Home</u></a>
         </li>
         <li class="food" >
             <a href="food.html" onclick="audio.play()" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Food</a>
@@ -31,14 +46,19 @@
         <li class="donate">
             <a href="donate.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Donate</a>
         </li>
+        
+            
         <li class="login">
-          <a href=""id="a" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;left: 440px;">Logged in</a>
+          <a href="login.html" id="a" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;left: 460px;" >Logged In</a>
+        
+          
       </li>
       </ul>
         
       <div class="cart">
+        <a href="new_cart.html" target="_blank">
             <img class="cart-child" alt="" src="public/ellipse-1.svg" />
-            <img class="cart-favicon" alt="" src="public/cartfavicon@2x.png"/>
+            <img class="cart-favicon" alt="" src="public/cartfavicon@2x.png"/></a>
       </div>
       <div class="user">
             <img class="cart-child" alt="" src="public/ellipse-2.svg" />
@@ -47,9 +67,11 @@
 
       <img class="dog-and-cat" alt="" src="public/dog-and-cat@2x.png" />
       <img class="rabbit-and-dove" alt="" src="public/rabbit-and-dove@2x.png"/>
-      <img class="petzonia-logo-icon" alt="" src="public/petzonia-logo@2x.png"/>
+      <a href="index.html">
+        <img class="petzonia-logo-icon" alt="" src="public/petzonia-logo@2x.png"> 
+      </a>
 
-      <div class="eat-play">eat - play - repeat</div>
+    
       <div class="down">
         <div class="footer"></div>
         <div class="copywrite">
@@ -74,4 +96,4 @@
       </div>
     </div>
   </body>
-</html>
+</html> 
