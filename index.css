@@ -3,6 +3,9 @@ body {
   margin: 0;
   line-height: normal;
   display: flex;
+  background-image: url("home.png");
+  background-size: cover;
+    background-attachment: fixed;
 }
 
 
