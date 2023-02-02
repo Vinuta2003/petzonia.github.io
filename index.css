@@ -25,6 +25,22 @@ body {
   font-family: 'Itim', cursive;
 }
 
+.text-box{
+    animation: slide-up 2s;
+}
+
+@keyframes slide-up
+{
+  from{
+    opacity: 0.2;
+    line-height: 50 px;
+  }
+  to{
+    opacity: 1;
+    line-height: 25px;
+  }
+}
+
 div h3{
   padding-left: 200px;
 }
@@ -197,6 +213,15 @@ h3:hover span {
   text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 40px #000;
 }
 
+.rabbit-and-dove{
+  position: absolute;
+  top: 356;
+  margin-top: 1006px;
+  width: 968px;
+  height: 933px;
+}
+
+
 .footer {
   position: absolute;
   top: 0;
@@ -210,6 +235,7 @@ h3:hover span {
   width: 1920px;
   height: 259px;
 }
+
 .petzonia-stores-private {
   position: absolute;
   top: 12px;
