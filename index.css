@@ -26,27 +26,24 @@ body {
 }
 
 .text-box{
-    animation: slide-up 2s;
+    margin-top: 150px;
+    animation: slide-up 3s;
 }
 
 @keyframes slide-up
 {
   from{
     opacity: 0.2;
-    line-height: 50 px;
+    margin-left: 25%;
   }
   to{
     opacity: 1;
-    line-height: 25px;
+    margin-left: 1%;
   }
 }
 
 div h3{
   padding-left: 200px;
-}
-
-div p{
-  margin-top: 200px;
 }
 
 .main-item {
