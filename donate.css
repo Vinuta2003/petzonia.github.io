@@ -3,7 +3,9 @@ body{
 }
 
 .petzonia-logo-icon{
+	position: absolute;
 	width: 150px;
+	top: 50px;
 	margin-left: 50px;
 }
 
