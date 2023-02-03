@@ -216,7 +216,7 @@ h3:hover span {
 .footer {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
   border-radius: 64px 64px 0 0;
   background: linear-gradient(
       rgba(167, 145, 145, 0.2),
