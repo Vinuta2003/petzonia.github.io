@@ -1,3 +1,12 @@
+body{
+	background-image: url(http://source.unsplash.com/1920x1080/?animals,pets);
+}
+
+.petzonia-logo-icon{
+	width: 150px;
+	margin-left: 50px;
+}
+
 .donation-container {
 	height: 1000px;
 	font-family: 'Montserrat', sans-serif;
