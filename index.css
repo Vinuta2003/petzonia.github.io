@@ -216,16 +216,17 @@ h3:hover span {
   position: absolute;
   top: 0;
   margin-right: 100px;
+  margin-left: 0px;
   left: 0%;
 /*  border-radius: 64px 64px 0 0;*/
-  left: 0px;
+
   border-radius: 64px 64px 0 0;
   background: linear-gradient(
       rgba(167, 145, 145, 0.2),
       rgba(167, 145, 145, 0.2)
     ),
     #000;
-  width: 1996px;
+  width: 1890px;
   height: 238px;
 }
 
