@@ -266,7 +266,12 @@ img{
     background: var(--carribean-green);
 }
 
-
+.heading
+{
+    text-align: left;
+    font-family: 'Trebuchet MS';
+    font-size: 40px;
+}
 
 
 
