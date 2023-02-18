@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background-image: url("http://source.unsplash.com/1920x1080/?animals,pets");
+    background-image: url("pictures/loginbg.png");
     background-size: cover;
     background-attachment: fixed;
     font-family: sans-serif;
