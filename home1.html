@@ -1,82 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetZonia - Home</title>
     <link rel="icon" type="image/x-icon" href="logo.png">
-
-    <script src="home.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-  </head>
-  
-  <body >
-    <div class="main">
-        <video src="dog.mp4" muted autoplay loop class="video-slider active" style="width: 2000px;"></video>
-      <div class="main-child">
-        <h3>
-            <span>eat </span> - <span> play </span> - <span> repeat</span>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="pix/petzonia-logo@2x.png" class="logo" width="80px">
+        </a>
+        <h3 id="emphasize">
+            <span>EAT </span> - <span> PLAY </span> - <span> REPEAT</span>
         </h3>
-        <div class="text-box">
-            <p>Petzonia is a digital platform which is a comprehensive resource for pet owners and lovers, providing information, support, and community for those who are passionate about their furry friends.
+        <nav class="navigation">
+            <a href="#" class="active" >Home</a>
+            <a href="#" >Products</a>
+            <a href="#" >About Us</a>
+            <a href="#" >Vets</a>
+        </nav>
+    </header>
+    <section class="parall">
+        <img src="pix/fence.jpg" id="house">
+        <img src="pix/right_pix.png" alt="hare" id="hare" class="right_pix">
+        <!-- <img src="pix/sparrow.png" alt="sparrow" id="sparrow" class="right_pix"> -->
+
+        <img src="pix/dog.png" alt="dog" id="dog">
+        <!-- <img src="pix/rabiit.png" alt="rabiit" id="rabiit"> -->
+        <h2 id="titl">PetZonia</h2> 
+        <img src="pix/bird.png" alt="bird" id="bird">
+        <!-- <a href="login.html" id="login">
+            Login
+        </a> -->
+    </section>
+    <div class="sec">
+        <p class="par">
+            <br><br>
+            Petzonia is a digital platform which is a comprehensive resource for pet owners and lovers, providing information, support, and community for those who are passionate about their furry friends.
             <br>
             <br>We also aim at rescuing innocent animals in need. Donate to make a change in their lives.
             <br>
-            <br><a href="donate.html" target="_self" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;font-size:30px; ;">
-            <input type="button" value="Donate" style="width: 200px;;height: 70px;background-color: aqua;font-size: large;font-family: 'Trebuchet MS';">
-            </a>
-            </p>
+        </p>
+        <img src="pix/pet_group-01.png" id="pet_group">
     </div>
-      <ul class="options" id="options" style="font-size:35px;">
-        <li class="vets">
-            <a  href="index.html" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;"><u>Home</u></a>
-        </li>
-        <li class="food" >
-            <a href="food.html" onclick="audio.play()" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Food</a>
-            <script type="text/javascript">
-              const audio=new Audio();
-              audio.src="bark.wav";
-            </script>
-        </li>
-        <li class="toys">
-            <a href="toys.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">Toys</a>
-        </li>
-        <li class="donate">
-
-            <a href="donate.html" target="_blank" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;">About</a>
-        </li>        
-                <li class="login">
-          <a href="login.html" id="a" style="color: white;font-family: 'Trebuchet MS';text-decoration: none;left: 460px;">Logged in</a>
-        </li>
-      </ul>
-        
-      <div class="cart">
-        <a href="new_cart.html" target="_blank">
-            <img class="cart-child" alt="" src="public/ellipse-1.svg" />
-            <img class="cart-favicon" alt="" src="public/cartfavicon@2x.png"/></a>
-      </div>
-      <div class="user">
-            <img class="cart-child" alt="" src="public/ellipse-2.svg" />
-            <img class="pet-favicon" alt="" src="public/pet-favicon@2x.png"/>
-      </div>  
-      <a href="index.html">
-        <img class="petzonia-logo-icon" alt="" src="public/logo_whitebg.png"> 
-      </a>
-      <div class="down">
-        <div class="footer"></div>
-        <div class="copywrite">
-          <div class="petzonia-stores-private">
-            2023 PetZonia Stores Private Limited. All Rights Reserved.
-          </div>
-          <img class="copywrite-child" alt="" src="public/ellipse-3.svg" />
-          <img class="copyright-1-icon" alt="" src="public/copyright-1@2x.png"/>
-        </div>
-        <div class="socials">
+    <section class="socials">
           <img class="socials-child" alt="" src="public/ellipse-4.svg" />
           <img class="socials-item" alt="" src="public/ellipse-4.svg" />
           <img class="socials-inner" alt="" src="public/ellipse-6.svg" />
@@ -89,8 +59,14 @@
           <a href="www.instagram.com" target="_blank">
             <img class="instagram-icon" alt="" src="public/instagram@2x.png" />
           </a>
-        </div>
-      </div>
-    </div>
-  </body>
-</html> 
+    </section>  
+
+    <footer class="bg ">
+        <p class="foot">
+            Copyright &copy; - 2024 PetZonia - All rights reserved
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
