@@ -1,32 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
 
-.about
-{
+body{
+/*    background: linear-gradient(b3c638, ddf7fb);*/
+    background: grey;
+    min-height: 100vh;
+    overflow-x: hidden;   
+}
+
+
+#emphasize{
+    padding: 10px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    align-items: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo{
+    pointer-events: none;
+}
+
+.logo img:hover{
+    width: 150px;   
+}
+
+header {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
     display: flex;
-    top: 0px;
-    left: 0px;
-    background-color: purple;
-    height: 200px;
-    width: 10000px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
-.main
-{   position: absolute;
-    left: 700px;
+
+.logo {
+    pointer-events: none;
+}
+
+.navigation a {
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 6px 15px;
+    margin: 0 10px;
+    font-weight: 600;
+    border-radius: 15px;
+    left: 500px;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: aqua;
+    color: black;
+    
+}
+
+.background {
+    background: grey;
+    background-blend-mode: darken;
+    background-size: cover;
+    position:absolute;
     top: 150px;
-}
-img
-{
-
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-      
+    left: 50px;
 }
 
-.text
-{
-    font-family: 'Trebuchet MS';
-    position: relative;
+.box-main {
+    
 
+    float: left;
+  
+    align-items: left;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
 }
 
+.firstHalf {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.firstHalf img {
+    display: flex;
+    border-radius: 9050px;
+}
+
+.text-big {
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+    font-size: 41px;
+    text-align: center;
+}
+
+.text-small {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+#service {
+    margin: 34px;
+    display: flex;
+}
+
+#service .box {
+    padding: 100px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    
+}
+
+#service .box img {
+    margin-top: 10px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 200px;
+}
+
+#service .box p {
+
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+
+    padding: 100px;
+    margin: 3px 6px;
+    border-radius: 28px;
+}
+
+#services .box img {
+    margin-top: 10px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 100px;
+}
+
+#services .box p {
+
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
