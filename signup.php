@@ -20,7 +20,7 @@ session_start();
 
 			mysqli_query($con, $query);
 
-			header("Location: login.php");
+			header("Location: https://github.com/VinutaSBhat/petzonia.github.io/blob/main/login.php");
 			die;
 		}else
 		{

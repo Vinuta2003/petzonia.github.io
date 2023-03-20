@@ -30,7 +30,7 @@ session_start();
 					{
 
 						$_SESSION['user_id'] = $user_data['user_id'];
-						header("Location:http://localhost/Vinuta/home1.html");
+						header("Location:home1.html");
 						die;
 					}
 				}
