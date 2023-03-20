@@ -20,7 +20,7 @@ session_start();
 
 			mysqli_query($con, $query);
 
-			header("Location: https://github.com/VinutaSBhat/petzonia.github.io/blob/main/login.php");
+			header("Location: http://localhost/Vinuta/login.php");
 			die;
 		}else
 		{
@@ -44,7 +44,7 @@ session_start();
 		body {
 			margin: 0;
 			padding: 0;
-			background-image: url("loginbg.png");
+			background-image: url("Pictures/loginbg.png");
 			background-size: cover;
 			background-attachment: fixed;
 			font-family: sans-serif;
@@ -123,7 +123,7 @@ session_start();
 		}
 	</style>
 	<div style="top: 8%;left: 70%;position: absolute;">
-		<img src="petzonia-logo@2x.png" width="150px" height="150px">
+		<img src="public/petzonia-logo@2x.png" width="150px" height="150px">
 	</div>
 	<div class="loginbox" name="loginbox">
 
