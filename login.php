@@ -35,13 +35,11 @@ session_start();
 					}
 				}
 			}
-
-			echo "wrong username or password!";
-		}else
+else
 		{
 			echo "wrong username or password!";
 		}
-	}
+	}}
 
 ?>
 
