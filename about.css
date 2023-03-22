@@ -7,7 +7,8 @@
 
 body{
 /*    background: linear-gradient(b3c638, ddf7fb);*/
-    background: grey;
+/*    background: grey;*/
+    background-image: url(pix/real_house.jpg);
     min-height: 100vh;
     overflow-x: hidden;   
 }
@@ -64,30 +65,27 @@ header {
     
 }
 
-.background {
-    background: grey;
-    background-blend-mode: darken;
-    background-size: cover;
-    position:absolute;
-    top: 150px;
-    left: 50px;
-}
-
 .box-main {
-    
-
     float: left;
-  
-    align-items: left;
+    align-items: center;
     color: white;
     max-width: 50%;
     margin: auto;
     height: 80%;
 }
 
+.firstsection{
+    height: 85vh;
+    margin: auto;
+    margin: 0 10%;
+    align-items: center;
+    justify-content: center;
+}
+
 .firstHalf {
     width: 75%;
     display: flex;
+    margin: 13% 13%;
     flex-direction: column;
     justify-content: center;
     
@@ -109,6 +107,7 @@ header {
     font-family: 'Sansita Swashed', cursive;
     font-size: 25px;
     text-align: center;
+    color: white;
 }
 
 #service {
@@ -118,7 +117,7 @@ header {
 
 #service .box {
     padding: 100px;
-    margin: 3px 6px;
+    margin: 30% 6px;
     border-radius: 28px;
     
 }
@@ -138,14 +137,14 @@ header {
 }
 
 #services {
-    margin: 34px;
+/*    margin: 10% 10%;*/
     display: flex;
 }
 
 #services .box {
 
     padding: 100px;
-    margin: 3px 6px;
+    margin: 25% 6px;
     border-radius: 28px;
 }
 
@@ -195,4 +194,38 @@ header {
         width: 100%;
         display: block;
     }
+}
+
+/*FOOTER AND SOCIALS*/
+
+.foot{
+    background: none;
+    color: black;
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 20px;
+}
+
+.socials{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+}
+
+.socials-child,
+.socials-inner,
+.socials-item {
+    position: absolute;
+    height: 30px;
+}
+
+.socials-inner, .socials-item, .socials-child, .youtube-icon, .facebook-icon, .instagram-icon{
+    margin: auto;
+    padding: 10px;
+}
+
+.socials img{
+    width: 70px;
 }
