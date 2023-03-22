@@ -70,27 +70,27 @@ function totall() {
 }
 
 
-// function calculate2(elm) {
-//   var chk = $(elm),                // the checkbox
-//       vlu = chk.val(),             // the current qty value
-//       pid = chk.data("productid"), // product id
-//       unt = chk.data("unitprice"), // unit price
-//       res = $("amount" + pid),   // the result for this product
-//       tot = vlu * unt;             // total
+function calculate2(elm) {
+  var chk = $(elm),                // the checkbox
+      vlu = chk.val(),             // the current qty value
+      pid = chk.data("productid"), // product id
+      unt = chk.data("unitprice"), // unit price
+      res = $("amount" + pid),   // the result for this product
+      tot = vlu * unt;             // total
   
-//   res.text("$" + tot);
-// }
+  res.text("$" + tot);
+}
 
 
-// function calculate(elm) {
-//   var vlu = elm.value,           // the current qty value
-//       pid = elm.getAttribute("data-productid"), // product id
-//       unt = elm.getAttribute("data-unitprice"), // unit price
-//       res = document.getElementsByClassName("amout" + pid),   // the result for this product
-//       tot = vlu * unt;             // total
+function calculate(elm) {
+  var vlu = elm.value,           // the current qty value
+      pid = elm.getAttribute("data-productid"), // product id
+      unt = elm.getAttribute("data-unitprice"), // unit price
+      res = document.getElementsByClassName("amout" + pid),   // the result for this product
+      tot = vlu * unt;             // total
   
-//   res[0].innerHTML = "$" + tot;
-// }
+  res[0].innerHTML = "$" + tot;
+}
 
 
 
