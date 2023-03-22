@@ -1,19 +1,20 @@
-function validate()
-{
-    var strValidate=form.username.value.search(/[a-z@".com"]/);
-    if(strValidate==-1)
-    {
-        document.getElementById("user").focus();
-        document.getElementById("user").select();
-        alert("Email invalid");
-        
-        
-    }
-    else{
-        
-       
-        window.location.assign("home1.html",'_blank');alert("Logged in Successfully!");
-        
-    }
-}
 
+function Validate() {
+    var strValidate = form.user_name.value.search(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+    if (strValidate == -1) {
+      document.getElementById("username").focus();
+      document.getElementById("username").select();
+      alert("Email invalid");
+  
+  
+    }
+    else {
+  
+  
+      window.location.assign("home1.html", '_blank'); alert("Logged in Successfully!");
+  
+    }
+  }
+  
+  
+  

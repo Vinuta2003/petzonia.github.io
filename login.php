@@ -33,6 +33,10 @@ session_start();
 						header("Location:home1.html");
 						die;
 					}
+					else
+					{
+						echo "wrong username or password!";
+					}
 				}
 			}
 else
@@ -49,8 +53,8 @@ else
 
 <head>
 	<title>Petzonia</title>
-
-	<link rel="icon" type="image/x-icon" href="petzonia-logo@2x.png">
+	
+	<link rel="icon" type="image/x-icon" href="public/petzonia-logo@2x.png">
 </head>
 
 <body>
@@ -58,7 +62,7 @@ else
 		body {
 			margin: 0;
 			padding: 0;
-			background-image: url("loginbg.png");
+			background-image: url("Pictures/loginbg.png");
 			background-size: cover;
 			background-attachment: fixed;
 			font-family: sans-serif;
@@ -137,7 +141,7 @@ else
 		}
 	</style>
 	<div style="top: 8%;left: 70%;position: absolute;">
-		<img src="petzonia-logo@2x.png" width="150px" height="150px">
+		<img src="public/petzonia-logo@2x.png" width="150px" height="150px">
 	</div>
 	<div class="loginbox" name="loginbox">
 

@@ -35,7 +35,7 @@ session_start();
 
 <head>
 	<title>Petzonia</title>
-
+	<script src="login.js"></script>
 	<link rel="icon" type="image/x-icon" href="petzonia-logo@2x.png">
 </head>
 
@@ -127,7 +127,7 @@ session_start();
 	</div>
 	<div class="loginbox" name="loginbox">
 
-		<form method="post">
+		<form method="post" onsubmit="Validate()">
 			<h1 style="font-family: brush;">Sign Up</h1>
 
 			<input id="text" type="text" name="user_name" placeholder="username"><br><br>
