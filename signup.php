@@ -1,32 +1,38 @@
-<?php 
+<?php
 session_start();
 
-	include("connection.php");
-	include("functions.php");
+include("connection.php");
+include("functions.php");
 
 
-	if($_SERVER['REQUEST_METHOD'] == "POST")
-	{
-		//something was posted
-		$user_name = $_POST['user_name'];
-		$password = $_POST['password'];
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+	//something was posted
+	$user_name = $_POST['user_name'];
+	$password = $_POST['password'];
+
+	if (strlen($user_name) > 5 && strlen($password) > 5 && !is_numeric($user_name)) {
+		$sql = "select * from user where user_name = '$user_name' limit 1";
+		$result = mysqli_query($con, $sql);
+		if (mysqli_num_rows($result) > 0) {
+			echo ('Username taken!');
+		} else
+		//save to database
 		{
-
-			//save to database
 			$user_id = random_num(20);
 			$query = "insert into user (user_id,user_name,password) values ('$user_id','$user_name','$password')";
 
 			mysqli_query($con, $query);
-
-			header("Location: http://localhost/Vinuta/login.php");
+			header("Location:http://localhost/Vinuta/login.php");
 			die;
-		}else
-		{
-			echo "Please enter some valid information!";
 		}
+
+	} else {
+		echo "username and password should have at least 6 characters/username cannot be numeric";
 	}
+
+}
+
 ?>
 
 
@@ -35,11 +41,11 @@ session_start();
 
 <head>
 	<title>Petzonia</title>
-	<script src="login.js"></script>
-	<link rel="icon" type="image/x-icon" href="petzonia-logo@2x.png">
+	<link rel="icon" type="image/x-icon" href="public/petzonia-logo@2x.png">
 </head>
 
 <body>
+
 	<style>
 		body {
 			margin: 0;
@@ -127,7 +133,7 @@ session_start();
 	</div>
 	<div class="loginbox" name="loginbox">
 
-		<form method="post" onsubmit="Validate()">
+		<form method="post">
 			<h1 style="font-family: brush;">Sign Up</h1>
 
 			<input id="text" type="text" name="user_name" placeholder="username"><br><br>
@@ -135,7 +141,7 @@ session_start();
 
 			<input id="button" type="submit" value="Sign Up"><br><br>
 
-			<a href="login.php">Click to Login</a><br><br>
+			<a href="http://localhost/Vinuta/login.php">Click to Login</a><br><br>
 		</form>
 	</div>
 </body>
